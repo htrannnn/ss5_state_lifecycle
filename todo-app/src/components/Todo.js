@@ -9,7 +9,7 @@ class Todo extends React.Component {
 				<ul>
 					{/* this.props: dữ liệu được truyền vào từ this.state */}
 					{this.props.todoData.map((todo) => (
-						<TodoItem key={todo.id} todo={todo} />
+						<TodoItem key={todo.id} todo={todo} handleChange={this.props.handleChange} />
 					))}
 				</ul>
 			</>

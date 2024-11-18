@@ -19,3 +19,7 @@ const todoData = [
 export function getAllTask() {
 	return [...todoData]; //trả về bản sao của todoData để tránh file gốc bị sửa đổi ngoài ý muốn
 }
+
+export function addTodo(data) {
+	todoData.push(data);
+}
